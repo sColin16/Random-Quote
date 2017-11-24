@@ -1,0 +1,4 @@
+/*Template Code Only*/
+.test::before {
+    content:"CSS Attached";
+}
