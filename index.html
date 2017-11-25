@@ -3,25 +3,52 @@
     <head>
         <meta charset="utf-8">
         
-        <title>Webapge Template Title</title>
+        <title>Random Quote</title>
     
         <!--Scale the webpage appropriately on mobile devices-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!--Information meta tags-->
-        <meta name="description" content="Webpage Description">
-        <meta name="keywords" content="Webpage Keywords">
-    
+        <meta name="description" content="A random quote generator based off of the Forismatic API">
+        <meta name="keywords" content="">
+        
+        <!--font awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Tinos:400,700" rel="stylesheet">
+        
         <!--Main CSS Style Sheet-->
         <link rel="stylesheet" type="text/css" href="style.css">
         
-        <!--Fonts go here-->
+       
+        
+        
         
     </head>
     <body>
-        <h1>It's Alive!</h1>
-        <p class = "test"></p>
-    	Test
+        
+        
+        <div id = "target1" class = "block">
+            <div id = "share-bar">
+                <b id = "share">Share:&nbsp;</b>
+                <!--<i class="fa fa-facebook" aria-hidden="true">&nbsp;&nbsp;</i>-->
+                <i class="fa fa-twitter" aria-hidden="true">&nbsp;&nbsp;</i>
+                <!--<i class="fa fa-google-plus-square" aria-hidden="true">&nbsp;&nbsp;</i>-->
+            </div>
+            <div id = "quote-wrapper" class = "fadeOut">
+                <h2 id = "quote"></h2>
+            
+                <br>
+            
+                <h3 id = "author"></h3>
+            </div>
+            
+            <button id = "new-quote"><strong>New Quote</strong></button>
+            
+        </div>
+        
+        <footer>Created by <a href = "https://scolin16.github.io" target="_blank">Colin Siles</a></footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src = "script.js"></script>
     
     </body>

@@ -1,4 +1,122 @@
-/*Template Code Only*/
-.test::before {
-    content:"CSS Attached";
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #C0392B;
+    height: 90%;
+    margin: 5% 5% 0 5%;
+    font-family: Tinos, serif;
+    color:white;
+}
+
+.block {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fa {
+    font-size: 30px;
+    
+}
+
+#new-quote {
+    border-radius:999px;/*to make circular corners*/
+    background-color: transparent;
+    border: 2px solid white;
+    color:white;
+    width:50%;
+    font-size:20px;
+    line-height:30px;
+    margin-left:25%;
+    font-family: Tinos;
+    outline:none;
+}
+
+#new-quote:hover {
+    background-color: white;
+    color:#C0392B;
+    transition: color, background-color 0.2s;
+    cursor: pointer;
+}
+
+#share-bar {
+    float:right;
+    position: relative;
+    font-size: 20px;
+}
+
+#quote-wrapper {
+    float:left;
+}
+
+footer {
+    bottom:0;
+    position: absolute;
+    text-align: center;
+    width:90%;
+    margin-bottom: 2%;
+}
+
+footer a{
+    color: white;
+}
+
+.fa:hover {
+    text-shadow: 2px 2px 1px black;
+    transform: translate(-1px, -1px);
+    cursor: pointer;
+}
+
+.fadeOut {
+    opacity: 0;
+    animation: fadeOut 0.4s;
+}
+
+.fadeIn {
+    opacity: 1;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/*breakpoint for devices larger than iPads, like desktops and laptops*/
+@media screen and (min-width: 1025px) {
+    #target1{
+        margin-left: 25%;
+        width: 40%;
+    }
+    
+}
+
+/*breakpoint for iPad in protrait and landscape, and iPhone in landscape*/
+@media screen and (max-width: 1024px) {
+    #target1 {
+        margin-left: 12.5%;
+        width: 65%;
+    }
+}
+
+
+/*breakpoint for smartphones in portrait*/
+@media screen and (max-width: 480px) {
+    #target1 {
+        width:90%;
+        margin-left: 0;
+    }
+    
+    #new-quote {
+        width:100%;
+        margin:0;
+    }
+    
 }
